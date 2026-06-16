@@ -1,0 +1,14 @@
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\bin\Debug\net10.0\SortingVisualizer.exe
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\bin\Debug\net10.0\SortingVisualizer.deps.json
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\bin\Debug\net10.0\SortingVisualizer.runtimeconfig.json
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\bin\Debug\net10.0\SortingVisualizer.dll
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\bin\Debug\net10.0\SortingVisualizer.pdb
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\obj\Debug\net10.0\SortingVisualizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\obj\Debug\net10.0\SortingVisualizer.AssemblyInfoInputs.cache
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\obj\Debug\net10.0\SortingVisualizer.AssemblyInfo.cs
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\obj\Debug\net10.0\SortingVisualizer.csproj.CoreCompileInputs.cache
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\obj\Debug\net10.0\SortingVisualizer.dll
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\obj\Debug\net10.0\refint\SortingVisualizer.dll
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\obj\Debug\net10.0\SortingVisualizer.pdb
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\obj\Debug\net10.0\SortingVisualizer.genruntimeconfig.cache
+C:\Users\dimab\source\repos\SortingVisualizer\SortingVisualizer\obj\Debug\net10.0\ref\SortingVisualizer.dll

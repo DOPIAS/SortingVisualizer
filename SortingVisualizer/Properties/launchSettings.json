@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SortingVisualizer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
