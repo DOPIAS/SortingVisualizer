@@ -101,7 +101,7 @@ namespace SortingVisualizer
 
                 // Рисуем значения и столбик
                 Console.Write($"{array[i],2} | ");
-                Console.WriteLine(new string('█', array[i]));
+                Console.WriteLine(new string('█', array[i]).PadRight(50));
             }
             Console.ResetColor(); // Сбрасываем цвет обратно
         }
