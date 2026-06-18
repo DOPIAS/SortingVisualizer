@@ -6,7 +6,7 @@ using SortingVisualizer.Models;
 
 namespace SortingVisualizer
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -58,7 +58,7 @@ namespace SortingVisualizer
             Console.WriteLine("=== РЕЖИМ 'ГОНКИ' АЛГОРИТМОВ ===");
             Console.Write("Введите размер массива (например, 100): ");
 
-            if (!int.TryParse(Console.ReadLine(), out int size) || size <= 0) size = 100;
+            if (!int.TryParse(Console.ReadLine() ?? "", out int size) || size <= 0) size = 100;
 
             Console.WriteLine("\nВыберите начальное состояние массива:");
             Console.WriteLine("1. Случайный");
@@ -101,7 +101,7 @@ namespace SortingVisualizer
             Console.WriteLine($"=== {sorter.Name.ToUpper()} ===");
             Console.Write("Введите размер массива (рекомендуется 15-25): ");
 
-            if (!int.TryParse(Console.ReadLine(), out int size) || size <= 0) size = 20;
+            if (!int.TryParse(Console.ReadLine() ?? "", out int size) || size <= 0) size = 20;
 
             Console.WriteLine("\nВыберите начальное состояние массива:");
             Console.WriteLine("1. Случайный");
@@ -158,7 +158,7 @@ namespace SortingVisualizer
             Console.ResetColor(); // Сбрасываем цвет обратно
         }
 
-        static int[] GenerateArray(int size, char type)
+        public static int[] GenerateArray(int size, char type)
         {
             int[] arr = new int[size];
             Random rand = new Random();

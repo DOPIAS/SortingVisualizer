@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="SortingVisualizer.Tests/SortingVisualizer.Tests.csproj" Id="b6e2ee71-76bc-4985-8673-9274be90e3cd" />
   <Project Path="SortingVisualizer/SortingVisualizer.csproj" />
 </Solution>
