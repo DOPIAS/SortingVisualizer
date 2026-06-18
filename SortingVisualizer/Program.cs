@@ -36,7 +36,7 @@ namespace SortingVisualizer
                 }
 
                 // Инициализируем выбранный алгоритм через интерфейс
-                ISorter sorter = key switch
+                ISorter? sorter = key switch
                 {
                     '1' => new BubbleSorter(),
                     '2' => new InsertionSorter(),
