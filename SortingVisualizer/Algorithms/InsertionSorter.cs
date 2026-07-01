@@ -23,7 +23,6 @@ namespace SortingVisualizer.Algorithms
                 int key = arr[i];
                 int j = i - 1;
 
-                // Показываем текущее сравнение
                 yield return new SortStep
                 {
                     Type = StepType.Comparison,
@@ -36,7 +35,6 @@ namespace SortingVisualizer.Algorithms
                 {
                     ComparisonsCount++;
 
-                    // Сдвигаем элемент
                     arr[j + 1] = arr[j];
                     SwapsCount++;
 
@@ -50,13 +48,11 @@ namespace SortingVisualizer.Algorithms
                     j--;
                 }
 
-                // Учитываем последнее сравнение, когда цикл прервался
                 if (j >= 0) ComparisonsCount++;
 
                 arr[j + 1] = key;
             }
 
-            // Завершение работы
             yield return new SortStep
             {
                 Type = StepType.Done,

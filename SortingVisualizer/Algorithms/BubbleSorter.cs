@@ -12,11 +12,9 @@ namespace SortingVisualizer.Algorithms
 
         public IEnumerable<SortStep> Sort(int[] array)
         {
-            // Обнуляем счетчики перед началом
             ComparisonsCount = 0;
             SwapsCount = 0;
 
-            // Делаем копию массива, чтобы не испортить исходные данные
             int[] arr = (int[])array.Clone();
             int n = arr.Length;
 
@@ -26,7 +24,6 @@ namespace SortingVisualizer.Algorithms
                 {
                     ComparisonsCount++;
 
-                    // Передаем в программу шаг сравнения для отрисовки
                     yield return new SortStep
                     {
                         Type = StepType.Comparison,
@@ -37,13 +34,11 @@ namespace SortingVisualizer.Algorithms
 
                     if (arr[j] > arr[j + 1])
                     {
-                        // Меняем элементы местами
                         int temp = arr[j];
                         arr[j] = arr[j + 1];
                         arr[j + 1] = temp;
                         SwapsCount++;
 
-                        // Передаем в программу шаг перестановки для отрисовки
                         yield return new SortStep
                         {
                             Type = StepType.Swap,
@@ -55,7 +50,6 @@ namespace SortingVisualizer.Algorithms
                 }
             }
 
-            // Сообщаем, что сортировка завершена
             yield return new SortStep
             {
                 Type = StepType.Done,

@@ -17,13 +17,11 @@ namespace SortingVisualizer.Algorithms
 
             int[] arr = (int[])array.Clone();
 
-            // Запускаем рекурсивную сортировку
             foreach (var step in QuickSortHelper(arr, 0, arr.Length - 1))
             {
                 yield return step;
             }
 
-            // Финал
             yield return new SortStep
             {
                 Type = StepType.Done,
@@ -39,10 +37,8 @@ namespace SortingVisualizer.Algorithms
             {
                 int pivotIndex = -1;
 
-                // Получаем шаги разделения массива
                 foreach (var step in Partition(arr, low, high))
                 {
-                    // Технический шаг: получаем индекс опорного элемента
                     if (step.Type == StepType.Done)
                     {
                         pivotIndex = step.Index1;
@@ -90,7 +86,6 @@ namespace SortingVisualizer.Algorithms
 
             yield return new SortStep { Type = StepType.Swap, Index1 = i + 1, Index2 = high, CurrentArray = (int[])arr.Clone() };
 
-            // Возвращаем индекс опорного элемента как технический Done-шаг
             yield return new SortStep { Type = StepType.Done, Index1 = i + 1, Index2 = -1, CurrentArray = arr };
         }
     }

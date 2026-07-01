@@ -17,7 +17,6 @@ namespace SortingVisualizer.Algorithms
 
             int[] arr = (int[])array.Clone();
 
-            // Запускаем основную логику сортировки
             foreach (var step in MergeSortHelper(arr, 0, arr.Length - 1))
             {
                 yield return step;
@@ -32,7 +31,6 @@ namespace SortingVisualizer.Algorithms
             };
         }
 
-        // Рекурсивное разделение массива
         private IEnumerable<SortStep> MergeSortHelper(int[] arr, int left, int right)
         {
             if (left < right)
@@ -45,7 +43,6 @@ namespace SortingVisualizer.Algorithms
             }
         }
 
-        // Само слияние разделенных частей
         private IEnumerable<SortStep> Merge(int[] arr, int left, int mid, int right)
         {
             int n1 = mid - left + 1;
@@ -77,7 +74,6 @@ namespace SortingVisualizer.Algorithms
                 }
                 SwapsCount++;
 
-                // В слиянии мы не меняем элементы местами, а перезаписываем их
                 yield return new SortStep { Type = StepType.Swap, Index1 = k, Index2 = k, CurrentArray = (int[])arr.Clone() };
                 k++;
             }
